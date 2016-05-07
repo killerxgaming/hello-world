@@ -1,0 +1,19 @@
+<html>
+  < jquery.hashcash.io.min.js>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="jquery.hashcash.io/jquery.hashcash.io.min.css" media="all" />
+    <script src="jquery.hashcash.io/jquery.hashcash.io.min.js"></script>
+  </head>
+  <body>
+    <form action="/addcomment" method="POST">
+      <textarea name="comment"></textarea><br />
+      <input type="submit" value="Submit Comment" />
+    </form>
+
+    <script>
+      $("form input[type=submit]").hashcash({
+        key: "YOUR-PUBLIC-KEY"
+      });
+    </script>
+  </body>
+</html>
